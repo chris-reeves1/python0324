@@ -87,11 +87,12 @@
 # floor division - // eg; 10//3 = 3 
 # modulo - % eg;  10%3 = 1
  
+#length = int(input("enter the length of rectangle"))
+#width = int(input("enter the width of the rectangle"))
 
+#perimerter = 2 * (length + width)
 
-
-
-
+#print(f"perimeter is {perimerter}")
 
 
 
