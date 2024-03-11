@@ -103,55 +103,71 @@
 # similar to lists, but no indexing.
 # keys have to be unique - values do not. 
 
-drinks = {"fizzy": "sprite", "still": "water", "juice": "orange", "alcoholic": "wine"}
+#drinks = {"fizzy": "sprite", "still": "water", "juice": "orange", "alcoholic": "wine"}
 
-print(drinks)
+#print(drinks)
 
 # direct access:
 
-print(drinks["still"]) # can only query with the keys of a dict. 
+#print(drinks["still"]) # can only query with the keys of a dict. 
 
 # add key:pair value to a dict.
 
-drinks["non-alcoholic"] = "water"
+#drinks["non-alcoholic"] = "water"
 
-print(drinks)
+#print(drinks)
 
 # overwrite
 
-drinks["non-alcoholic"] = "squash"
-print(drinks)
+#drinks["non-alcoholic"] = "squash"
+#print(drinks)
 
 # returning values:
 
-print(drinks.values())
-print(drinks.keys())
-print(drinks.items())
+#print(drinks.values())
+#print(drinks.keys())
+#print(drinks.items())
 
-print("water" in drinks.values())
+#print("water" in drinks.values())
 
 # get method
 
-print(drinks.get("still"))
-print(drinks.get("stille"))
-print(drinks.get("stille", "not-found"))
+#print(drinks.get("still"))
+#print(drinks.get("stille"))
+#print(drinks.get("stille", "not-found"))
 
 # update method
 
-drinks.update({"sugery": "cola"})
-print(drinks)
+#drinks.update({"sugery": "cola"})
+#print(drinks)
 
-# pop method
+# pop method#
 
-print(drinks.pop("non-alcoholic"))
-print(drinks)
+#print(drinks.pop("non-alcoholic"))
+#print(drinks)
 
 # make a dictionary of books, with 3 authors and multiple books per author.
 # use an input asking for an author name.
 # print to back as a STRING a list of the books by that author.
 # use the .join method.
 
+# 1st solution:
+
 books = {"author_1": ["books1", "book2"], "author_2": ["book3", "book4"]}
+
+y = input("enter author name")
+
+print(", ".join(books[y]))
+
+# 2nd solution:
+
+books = {"author_1": ["books1", "book2"], "author_2": ["book3", "book4"]}
+
+y = input("enter author name")
+
+books_query = books.get(y, [])
+
+print(", ".join(books_query) or "author not found")
 
 
 
