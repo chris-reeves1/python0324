@@ -65,4 +65,24 @@ else:
 # if the mark is greater than 85 print 'distinction'
 # if the mark is between 65 and 85 print pass
 # anything else print 'fail'
-# if elif else - if if else 
+# if elif else - if if else
+
+#x = int(input("enter grade: "))
+
+#if x >= 85:
+#    print("distinction")
+#elif x >= 65:
+#    print("pass")
+#else:
+#    print("fail")
+
+# multiple compatators (multiple condtions using and/or):
+
+deposit = 100
+password = "password"
+
+if 0 < deposit <= 100 or password == "password1":
+    print(f"thankyou for deposit of {deposit}")
+else:
+    print("failed to deposit")
+
