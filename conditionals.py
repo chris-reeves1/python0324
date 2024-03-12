@@ -78,11 +78,54 @@ else:
 
 # multiple compatators (multiple condtions using and/or):
 
-deposit = 100
-password = "password"
+#deposit = 101
+#password = "password1"
 
-if 0 < deposit <= 100 or password == "password1":
-    print(f"thankyou for deposit of {deposit}")
-else:
-    print("failed to deposit")
+#if 0 < deposit <= 100 or password == "password1":
+    #print(f"thankyou for deposit of {deposit}")
+#else:
+    #print("failed to deposit")
+
+# and takes precedence over or!!!
+
+#if not 0 < deposit <=100 or password != "password":
+    #print("failed to deposit")
+#else:
+    #print("deposit ok")
+
+# in and not in:
+
+name = "root123"
+
+#if name in ("root", "admin", "user"):
+#    print("invalid username")
+#else:
+    #print("accepted")
+
+#if name not in ("root", "admin", "user"):
+#    print("accepted")
+#else:
+#    print("invalid")
+
+# weight converter app - 
+# user input for weight (float)
+# user to select either kgs or lbs.
+# if statement to check unit entered.
+# logic to convert from kgs to lbs and lbs - kgs
+# print out converted value.
+# error handling for upper/lower
+# optional - input validation
+
+
+
+
+
+
+
+
+
+
+
+
+
 
