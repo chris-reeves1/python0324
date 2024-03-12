@@ -153,21 +153,48 @@
 
 # 1st solution:
 
-books = {"author_1": ["books1", "book2"], "author_2": ["book3", "book4"]}
+#books = {"author_1": ["books1", "book2"], "author_2": ["book3", "book4"]}
 
-y = input("enter author name")
+#y = input("enter author name")
 
-print(", ".join(books[y]))
+#print(", ".join(books[y]))
 
 # 2nd solution:
 
-books = {"author_1": ["books1", "book2"], "author_2": ["book3", "book4"]}
+#books = {"author_1": ["books1", "book2"], "author_2": ["book3", "book4"]}
 
-y = input("enter author name")
+#y = input("enter author name")
 
-books_query = books.get(y, [])
+#books_query = books.get(y, []) # any iterable will work. 
 
-print(", ".join(books_query) or "author not found")
+#print(", ".join(books_query) or "author not found")
+
+# tuples - we cant update but otherwise is similar to a list.
+# indicate that we dont want to change the data.
+# less memory - very slight.
+# more speed
+
+#rectangle = (10, 5) # regular or nothing.
+
+#rectangle[0] = 15 # cant update!!
+
+# sets - no indexing, no duplicate values.
+
+set1 = {1, 2, 3, 4, 5}
+set2 = {4, 5, 6, 7, 8}
+
+# union
+
+print(set1.union(set2))
+
+# intersection
+
+print(set1.intersection(set2))
+
+# difference
+
+print(set1.difference(set2))
+
 
 
 
