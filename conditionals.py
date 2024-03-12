@@ -47,18 +47,18 @@
 # only triggers if no other conditionals have evaluated to being true.
 # mostly only 1 statement is true - using elifs wil make our code more efficient.
 
-temp = 28
+#temp = 28
 
-if temp >= 30:
-    print("its very hot")
-elif temp > 25: 
-    print("pretty hot")
-elif temp > 20:
-    print("its ok")
-elif temp > 10:
-    print("cold")
-else:
-    print("genrally bad")
+#if temp >= 30:
+#    print("its very hot")
+#elif temp > 25: 
+#    print("pretty hot")
+#elif temp > 20:
+#    print("its ok")
+#elif temp > 10:
+#    print("cold")
+#else:
+#    print("genrally bad")
 
 # exercise
 # user input for a grade/mark
@@ -95,7 +95,7 @@ else:
 
 # in and not in:
 
-name = "root123"
+#name = "root123"
 
 #if name in ("root", "admin", "user"):
 #    print("invalid username")
@@ -116,7 +116,41 @@ name = "root123"
 # error handling for upper/lower
 # optional - input validation
 
+#1st solution
 
+#weight = float(input("enter weight: ")) 
+#unit = input("enter K for (kgs) or L for (lbs): ")
+
+#if unit.upper() == "K":
+#    converted = weight / 0.45
+#    print(f"weight in lbs: {converted}")
+#elif unit.upper() == "L":
+#    converted = weight * 0.45
+#    print(f"weight in Kgs: {converted}")
+#else:
+#    print("invalid unit pls enter k or l")
+    
+# 2nd solution
+import sys
+
+try:
+    weight = float(input("enter weight: "))
+except ValueError:
+    print("invalid input. Please enter a numeric value for weight!!")
+    sys.exit()
+
+while True:
+    unit = input("enter K for (kgs) or L for (lbs): ").upper()
+    if unit == "K":
+        converted = weight / 0.45
+        print(f"weight in lbs: {converted}")
+        break
+    elif unit == "L":
+        converted = weight * 0.45
+        print(f"weight in Kgs: {converted}")
+        break
+    else:
+        print("invalid unit pls enter a k or l!!!!!!")
 
 
 
