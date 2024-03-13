@@ -7,22 +7,75 @@
 #If he enters Q, he quits and leaves; the barman wishes him well in his search for love. 
 #If he orders but can't pay he's thrown out.
 
+#budget = int(input("enter your budget: "))
+#shakes = {"1": 3, "2": 4, "3": 5}
 
-budget = input
-shakes = {}
+#while True:
+#    print("shake options: ")
+#    for option, price in shakes.items():
+#        print(f"{option}. ${price}")
 
-while true:
-    print shakes options
+#    choice = input("what can i get you? (enter Q to quit): ")
 
-    Choice
+#    if choice.upper() == "Q":
+#        print("Goodbye!")
+#        break
 
-    if....q quit
+#    if choice not in shakes:
+#        print("invalid option") 
+#        continue
 
-    if.... invalid option
+#    price = shakes[choice]
+#    if price > budget:
+#        print("you cant afford that. Get out!")
+#        break
+    
+#    print("enjoy your shake")
+#    budget -= price
+#    print(f"remaining budget: ${budget}")
 
-    price > budget
-    ..... kicked out
 
-    budget -= priced
 
-    print remaining budget
+budget = int(input("enter your budget: "))
+shakes = {
+    "1": (3, "vanilla"), 
+    "2": (4, "chocolate"), 
+    "3": (5, "strawberry")
+    }
+
+while True:
+    print("shake options: ")
+    for option, (price, flavor) in shakes.items():
+        print(f"{option}. {flavor} - ${price}")
+    
+    choice = input("what can i get you? (enter Q to quit): ")
+
+    if choice.upper() == "Q":
+        print("goodbye")
+        break
+
+    if choice not in shakes:
+        print("invalid option")
+        continue
+
+    price, flavor = shakes[choice]
+    if price > budget:
+        print("cant afford it - get out!!")
+        break
+
+    print(f"enjoy your {flavor} milkshake")
+    budget -= price
+    print(f"remaining budget is ${budget}")
+
+
+
+
+
+
+
+
+
+
+
+
+
