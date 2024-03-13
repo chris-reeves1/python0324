@@ -145,4 +145,51 @@
 # set up repo send me link.
 # then do labs 2, 3 and 4.
 
+# while loop
+
+#counter = 0
+
+#while counter < 5:
+#    name = input("enter a name: ")
+#    print(name + " is awesome")
+#    counter += 1
+
+# for loop
+
+
+#for counter in range(5):
+#    name = input("enter a name: ")
+#    print(name + " is awesome")
+
+
+# list comprehension
+
+#names = [input("what is your name?: ") for name in range(5)]
+#for name in names:
+#    print(f"{name} is awesome")
+
+#[print(f"{name} is awesome") for name in [input("enter a name: ") for x in range(5)]]
+
+
+#Morning Challenge - rewrite this code without using if statements 
+#(or max or any inbuilt functions!!)
+
+#num = 10
+#num_1 = 20
+
+#if num > num_1:
+#    print(num)
+
+#else:
+#    print(num_1)
+
+#num1 = 12
+#num2 = 10
+
+
+#largest = num1 * (num1 > num2) + num2 * (num2 > num1)
+
+#print(f"{largest} is the largest number")
+
+
 
