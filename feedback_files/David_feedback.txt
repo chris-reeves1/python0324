@@ -1,0 +1,8 @@
+General comments
+David demonstrated good understanding of Python and general programming concepts. David moderately contributed to discussions and completed most of the labs as required.
+
+Learner punctionality and Engagement
+David was generally punctional throughout the module and enaged well.
+
+Recommendations on further learning
+Continue to practice intermediate areas of python, such as functions/files/modules.

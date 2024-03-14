@@ -1,0 +1,8 @@
+General comments
+James demonstrated basic understanding of Python and general programming concepts. James contributed when asked and completed some of the labs as required.
+
+Learner punctionality and Engagement
+James was sometimes punctual throughout the module and engaged to some extent.
+
+Recommendations on further learning
+Continue to practice the basics of python, such as iteration/conditionals/collections.

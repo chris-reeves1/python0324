@@ -1,0 +1,8 @@
+General comments
+alice demonstrated excellent understanding of Python and general programming concepts. alice actively contributed and helped collegues and went beyond the completion of the labs.
+
+Learner punctionality and Engagement
+alice was always punctual throughout the module and was highly engaged.
+
+Recommendations on further learning
+Continue to practice advanced areas in python, such as OOP/testing.
