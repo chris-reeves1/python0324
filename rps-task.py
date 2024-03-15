@@ -5,23 +5,33 @@
 # and ask the user if they want to play another round. 
 # You should use functions, loops, conditionals, random number generation to achieve this.
 
+import random
+
 def play_round():
     options = ["rock", "paper", "scissors"]
-    computer_choice = random.choice(options)  # Use the random module to select a choice for the computer
+    computer_choice = random.choice(options)
     user_choice = input("Enter your choice (rock/paper/scissors): ")
     print(f"Computer chose: {computer_choice}")
-
     if user_choice.lower() == computer_choice:
         return "tie"
     elif user_choice.lower() == "rock":
-        # Complete the condition and return value
+        if computer_choice == "scissors":
+            return "user"
+        else:
+            return "computer"
     elif user_choice.lower() == "paper":
-        # Complete the logic for when the user chooses paper
+        if computer_choice == "rock":
+            return "user"
+        else:
+            return "computer"
     elif user_choice.lower() == "scissors":
-        # Complete the logic for when the user chooses scissors
+        if computer_choice == "paper":
+            return "user"
+        else:
+            return "computer"
     else:
         print("Invalid choice. Please try again.")
-        return play_round() 
+        return play_round()
 
 num_rounds = 0
 user_wins = 0
