@@ -114,6 +114,60 @@
 # edit the file so that the top line is replaced with "this is a new line"
 # print out the edited file line by line. 
 
+# making file and content
+
+file = open("teams.txt", "w")
+
+sports_teams = ["man utd", "man city", "barcelona", "real madrid", "psg"]
+
+for i in sports_teams:
+    newline = i + "\n"
+    file.write(newline)
+
+file.close()
+
+file = open("teams.txt", "r")
+
+# printing lines 1 and 4
+
+lines = file.readlines()
+
+print(lines[0].strip())
+print(lines[3].strip())
+
+file.close()
+
+# editing the first line
+file = open("teams.txt", "r")
+
+lines = file.readlines()
+file.close()
+
+lines[0] = "this is a new line"
+
+file = open("teams.txt", "w")
+for i in range(len(lines)):
+    if i == len(lines)-1:
+        file.write(lines[i])
+    else:
+        file.write(lines[i].strip() + "\n")
+
+file.close()
+
+file = open("teams.txt", "r")
+
+for line in file:
+    print(line.strip())
+file.close()
+
+
+# with
+
+with open("filename.txt", "mode") as file: # alias
+    for n in range(1,11):
+        newline = ........
+        file.write(newline)
+
 
 
 
